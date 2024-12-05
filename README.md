@@ -1,3 +1,6 @@
+### Hono test with nodejs 
+
+Create the application from template :
 
 ```
 npm create hono@latest
@@ -16,19 +19,27 @@ create-hono version 0.14.3
 Get started with: cd hono-001-nodejs
 ```
 
+Use these commands:
 
 ```
 npm install
 npm run dev
 ```
 
+Open browser to see the result 
+
 ```
 open http://localhost:3000
 ```
 
+Create a javascript source code named index.js , because the template comes with typescript example, even I set nodejs ...
+
 ```
 "dev-js": "node src/index.js"
 ```
+
+I used same source code from intex.ts and I renamed into no_index.ts, because is javascript source code.
+I change into package.json script area to run the index.js with dev-js 
 
 ```
 npm run dev-js
@@ -38,7 +49,7 @@ npm run dev-js
 
 Server is running on http://localhost:3000
 ```
-
+The example source code works and I add some changes and I tested.
 The order of routes matters in Hono
 Can be tested on browser or with curl tool : 
 ```
