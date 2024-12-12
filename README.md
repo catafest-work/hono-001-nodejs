@@ -18,7 +18,6 @@ create-hono version 0.14.3
 🎉 Copied project files
 Get started with: cd hono-001-nodejs
 ```
-
 Use these commands:
 
 ```
@@ -49,15 +48,19 @@ npm run dev-js
 
 Server is running on http://localhost:3000
 ```
+
 The example source code works and I add some changes and I tested.
 The order of routes matters in Hono
 Can be tested on browser or with curl tool : 
+
 ```
 curl "http://localhost:3000/users/search?q=john&by=name"
 curl "http://localhost:3000/users/1"
 curl -X DELETE "http://localhost:3000/users/1"
 ```
+
 Use the cypress to test the application :
+
 ```aiignore
 \hono-001-nodejs>npm install cypress --save-dev   
 
@@ -78,5 +81,4 @@ up to date, audited 177 packages in 1s
 found 0 vulnerabilities
 
 \hono-001-nodejs>>npx cypress open   
-
 ```
