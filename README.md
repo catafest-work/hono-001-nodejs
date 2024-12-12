@@ -57,3 +57,26 @@ curl "http://localhost:3000/users/search?q=john&by=name"
 curl "http://localhost:3000/users/1"
 curl -X DELETE "http://localhost:3000/users/1"
 ```
+Use the cypress to test the application :
+```aiignore
+\hono-001-nodejs>npm install cypress --save-dev   
+
+up to date, audited 177 packages in 2s
+
+41 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+\hono-001-nodejs>npm install cypress --save-dev --foreground-scripts
+
+up to date, audited 177 packages in 1s
+
+41 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+\hono-001-nodejs>>npx cypress open   
+
+```

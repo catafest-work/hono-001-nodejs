@@ -175,4 +175,3 @@ app.delete('/users/:id', (c) => {
 serve(app, (info) => {
   console.log(`Server is running on http://localhost:${info.port}`)
 })
-
