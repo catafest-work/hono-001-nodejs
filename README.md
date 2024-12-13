@@ -2,7 +2,7 @@
 
 Create the application from template :
 
-```
+```aiignore
 npm create hono@latest
 
 > npx
@@ -20,27 +20,27 @@ Get started with: cd hono-001-nodejs
 ```
 Use these commands:
 
-```
+```aiignore
 npm install
 npm run dev
 ```
 
 Open browser to see the result 
 
-```
+```aiignore
 open http://localhost:3000
 ```
 
 Create a javascript source code named index.js , because the template comes with typescript example, even I set nodejs ...
 
-```
+```aiignore
 "dev-js": "node src/index.js"
 ```
 
 I used same source code from intex.ts and I renamed into no_index.ts, because is javascript source code.
 I change into package.json script area to run the index.js with dev-js 
 
-```
+```aiignore
 npm run dev-js
 
 > dev-js
@@ -53,7 +53,7 @@ The example source code works and I add some changes and I tested.
 The order of routes matters in Hono
 Can be tested on browser or with curl tool : 
 
-```
+```aiignore
 curl "http://localhost:3000/users/search?q=john&by=name"
 curl "http://localhost:3000/users/1"
 curl -X DELETE "http://localhost:3000/users/1"
